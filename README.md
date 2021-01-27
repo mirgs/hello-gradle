@@ -1,2 +1,2 @@
 # hello-gradle
-Proyecto con Gradle
+Proyecto con Spring Gradle
