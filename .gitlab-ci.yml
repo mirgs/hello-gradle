@@ -1,0 +1,11 @@
+include: 'openjdk:11-jdk'
+image: demo-sprint-gradle
+build-job:
+    stage: production
+    script:
+        - deploy
+    enviroment:
+        name: production
+        url: "http://10.250.10.2:8929/root/hello-gradle-gitlab.git"
+    only:
+        - java11
