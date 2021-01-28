@@ -1,6 +1,6 @@
 include: 'openjdk:11-jdk'
 default:
-    image: node:latest
+    image: java:latest
 
 build-job:
     stage: build
