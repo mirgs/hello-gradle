@@ -1,7 +1,5 @@
 default:
-    image: 
-        - java:latest
-        - openjdk:11-jdk
+    image: openjdk:11-jdk
 
 build-job:
     stage: build
@@ -10,7 +8,7 @@ build-job:
 test-job:
     stage: test
     script:
-        - ./gladlew assemble
+        - echo "Test"
 
 deploy-job:
     stage: deploy
